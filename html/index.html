@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/main.js" defer></script>
+	<title>Test Mail</title>
+</head>
+<body>
+	<div class="title">
+		<h3>AWS Sending Mail</h3>
+	</div>
+	<div class="content">
+		<form id="my-form" class="flex flex-col gap-10 justify-content-center">
+			<span class="text-center" id="response_message" hidden></span>
+			<div class="flex flex-col justify-space-between gap-5">
+				<label for="from">From</label>
+				<input class="form-control" type="text" name="from" id="from">
+			</div>
+			<div class="flex flex-col justify-space-between gap-5">
+				<label for="to">To</label>
+				<input class="form-control" type="text" name="to" id="to">
+			</div>
+			<!-- <div class="flex flex-col justify-space-between gap-5">
+				<label for="cc">CC</label>
+				<input class="form-control" type="text" name="cc" id="to">
+			</div>
+			<div class="flex flex-col justify-space-between gap-5">
+				<label for="bcc">BCC</label>
+				<input class="form-control" type="text" name="bcc" id="bcc">
+			</div> -->
+			<div class="flex flex-col justify-space-between gap-5">
+				<label for="subject">Subject</label>
+				<input class="form-control" type="text" name="subject" id="subject">
+			</div>
+			<div class="flex flex-col justify-space-between gap-5">
+				<label for="message">Content</label>
+				<textarea class="form-control" type="text" name="message" id="message" placeholder="Message..."></textarea>
+			</div>
+			<div> 
+				<button type="button" class="btn" id="summit_btn">Send</button>
+			</div>
+		</form>	
+	</div>
+</body>
+</html>
